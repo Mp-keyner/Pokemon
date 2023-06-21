@@ -1,0 +1,117 @@
+/* #232323 */
+/* #616161 */
+
+* {
+    transition: all ease 0.9s;
+    
+}   
+
+body{
+    background-image: url('./img/body_bg.png');
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 20pc);
+    row-gap: 1pc;
+    justify-items: center;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+.nav{
+    background-color: #232323;
+    margin-bottom: 1pc;
+    justify-content: space-between;
+    padding: 0 1pc;
+    height: 5pc;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li a{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: red;
+}
+.card{
+    width: 19pc;
+    background-color: #232323;
+    color: white;
+}
+.number{
+    position: relative;
+    height: 14pc;
+    width: 100%;
+    background: red;
+    color: #616161;
+    font-family: fantasy;
+    opacity: 0.09;  
+    text-align: center;
+    font-size: 6pc;
+}
+.imagen{
+    width: 13pc;
+    position: absolute;
+    top: 40px;
+    left: 16%;
+}
+.card:hover {
+    background-color: #616161;
+}
+.card:hover .number{
+    opacity: 1;
+    font-size: 11pc;
+}
+
+.card:hover .imagen{
+    width: 16pc;
+    top: -9px;
+    left: 8%;
+}
+
+.containerInfo{
+    padding: 0 1pc;
+    font-family: monospace;
+    font-size: 1pc;
+}
+
+.containerInfo h5{
+    display: flex;
+    justify-content: space-between;
+}
+
+.centrar{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1pc;
+}
+
+.border{
+    padding: 3px;
+    margin: 0;
+    border-radius: 6px;
+}
+.borderRa{
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .container{
+        grid-template-columns: repeat(2, 20pc);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container{
+        grid-template-columns: repeat(1, 20pc);
+    }
+}
