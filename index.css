@@ -49,7 +49,7 @@ a:hover{
     position: relative;
     height: 14pc;
     width: 100%;
-    background: red;
+    background: white;
     color: #616161;
     font-family: fantasy;
     opacity: 0.09;  
@@ -67,7 +67,7 @@ a:hover{
 }
 .card:hover .number{
     opacity: 1;
-    font-size: 11pc;
+    font-size: 9pc;
 }
 
 .card:hover .imagen{
@@ -102,7 +102,64 @@ a:hover{
 .borderRa{
     border-radius: 10px;
 }
+.more{
+    padding: 0 1pc;
+    font-family: fantasy;
+    color: white;
+    align-items: center;
+    gap: 7px;
+}
+.more div{
+    width: 2pc;
+}
+.more  img{
+    width: 2pc;
+}
+.more:hover   img{
+    rotate: 1deg;
+    animation: rotate 0.1s linear;
+}
+/*slider*/
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container {
+    display: flex;
+    width: 91%;
+    height: 70vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0 41pc;
+  }
+  
+  .slider-hijos {
+    flex: 0 0 115%;
+    width: 100%;
+    object-fit: cover;
+    margin: 1pc;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+  }
 
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  .slider-container::-webkit-scrollbar{
+    height: 1pc;
+  }
+  .slider-container::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #232323;
+  }
 
 @media screen and (max-width: 950px) {
     .container{
@@ -113,5 +170,8 @@ a:hover{
 @media screen and (max-width: 850px) {
     .container{
         grid-template-columns: repeat(1, 20pc);
+    }
+    .slider-container{
+        padding: 0px 4pc;
     }
 }
