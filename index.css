@@ -67,7 +67,7 @@ a:hover{
 }
 .card:hover .number{
     opacity: 1;
-    font-size: 9pc;
+    font-size: 8pc;
 }
 
 .card:hover .imagen{
