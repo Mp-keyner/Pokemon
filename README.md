@@ -277,4 +277,6 @@ Estos pseudo-elementos son específicos de los navegadores basados en WebKit y p
 
 ---
 
+# **[Aqui encontraras las imagenes necesarias](https://drive.google.com/drive/folders/1_DI0TlUgw_Vti2a2JXvoUeE1VsfcHrYn?usp=sharing)**
+
 Desarrollado por [Steam Academy](https://www.steamacademy.com.co/) bajo la supervición de [Keyner de la hoz ](https://github.com/Mp-keyner/)
