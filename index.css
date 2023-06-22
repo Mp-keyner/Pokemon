@@ -128,7 +128,7 @@ a:hover{
 .slider-container {
     display: flex;
     width: 91%;
-    height: 70vh;
+    /* height: 70vh; */
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     padding: 0 41pc;
