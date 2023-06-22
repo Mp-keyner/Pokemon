@@ -2,7 +2,7 @@
 
 **Link del Proyecto [Aqui](https://mp-keyner.github.io/Pokemon/)**
 
-Este proyecto se realizo con la finalidas de reforzar y ver nuevos conceptos y tecnicas de **HTML** y **CSS** desarrollado por tu Coach favorito [Keyner de la Hoz]('https://github.com/Mp-keyner/')
+Este proyecto se realizo con la finalidas de reforzar y ver nuevos conceptos y tecnicas de **HTML** y **CSS** desarrollado por tu Coach favorito [Keyner de la Hoz](https://github.com/Mp-keyner/)
 
 ## **Propiedades de CSS nuevas y que se usan en este proyecto**
 
@@ -277,4 +277,4 @@ Estos pseudo-elementos son específicos de los navegadores basados en WebKit y p
 
 ---
 
-Desarrollado por [Steam Academy]('https://www.steamacademy.com.co/') bajo la supervición de [Keyner de la hoz ]('https://github.com/Mp-keyner/')
+Desarrollado por [Steam Academy](https://www.steamacademy.com.co/) bajo la supervición de [Keyner de la hoz ](https://github.com/Mp-keyner/)
