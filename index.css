@@ -131,7 +131,7 @@ a:hover{
     /* height: 70vh; */
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    padding: 0 41pc;
+    padding: 0 31pc;
   }
   
   .slider-hijos {
