@@ -161,7 +161,13 @@ a:hover{
     border-radius: 10px;
     background-color: #232323;
   }
-
+.anuncio{
+    /* border: 1px solid red; */
+    width: 15pc;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
 @media screen and (max-width: 950px) {
     .container{
         grid-template-columns: repeat(2, 20pc);
