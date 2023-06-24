@@ -1,0 +1,89 @@
+*{
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    transition: all 0.9s ease;
+}
+
+
+body{
+    font-family: fantasy;
+    color: white;
+}
+header {
+    background-color: black;
+    padding: 1pc;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1pc;
+}
+main{
+    background-image: url('https://github.com/Mp-keyner/Pokemon/blob/main/img/body_bg.png?raw=true');
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1pc;
+}
+
+.container{
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 20pc);
+    gap: 1pc;
+}
+.cart{
+    width: 19pc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex: 0 0 17%;
+    scroll-snap-align: center;
+}
+.imga{
+    position: relative;
+    width: 100%;
+    height: 15pc;
+    font-size: 7pc;
+    text-align: center;
+  
+}
+.imga img{
+    top:4pc;
+    left: 3pc;
+    width: 70%;
+    position: absolute;
+}
+.cart:hover .imga img{
+    top:1pc;
+    width: 100%;
+    left: 5px;
+}
+.cart:hover .imga {
+   font-size: 9pc;
+}
+.des{
+    text-align: center;
+    padding: 1pc;
+    background-color: #232323;
+    height: 5pc;
+    border-radius: 10px;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+}
+.slider{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 170%;
+    height: 26pc;
+    padding: 0 22pc;
+}
+
+ @media(max-width: 800px){
+    .container{
+        grid-template-columns: 20pc;
+    }
+}

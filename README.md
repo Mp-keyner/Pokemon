@@ -354,4 +354,6 @@ Algunos puntos clave sobre `scroll-snap-type: mandatory` son:
 
 # **[Aqui encontraras las imagenes necesarias](https://drive.google.com/drive/folders/1_DI0TlUgw_Vti2a2JXvoUeE1VsfcHrYn?usp=sharing)**
 
+## **Tienes problema con el slider de cartas ? entra [Aqui](https://codepen.io/kener-de-la-hoz/pen/JjebvqZ) y veras un ejemplo**
+
 Desarrollado por [Steam Academy](https://www.steamacademy.com.co/) bajo la supervición de [Keyner de la hoz ](https://github.com/Mp-keyner/)
