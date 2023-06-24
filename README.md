@@ -258,6 +258,81 @@ Estos pseudo-elementos son específicos de los navegadores basados en WebKit y p
 
 **`Recuerda que estos pseudo-elementos solo afectarán la apariencia de las barras de desplazamiento en los navegadores compatibles con WebKit y pueden variar según la versión del navegador.`**
 
+---
+
+> flex: 0 0 0 **CSS**
+
+Se utiliza para controlar la flexibilidad de los elementos en un contenedor flexible. En particular, la declaración `flex: 0 0 115%;` establece tres valores para el comportamiento del elemento en el contenedor flexible.
+
+- El primer valor, `0`, define la flex-grow, que determina la capacidad del elemento para crecer en relación con los demás elementos en el contenedor. En este caso, al ser `0`, el elemento no crecerá en tamaño.
+
+- El segundo valor, también `0`, define la flex-shrink, que determina la capacidad del elemento para encogerse en relación con los demás elementos en el contenedor. Al ser `0`, el elemento no se encogerá en tamaño.
+
+- El tercer valor, `115%`, establece la flex-basis, que define el tamaño base del elemento antes de que se distribuyan los espacios adicionales y se apliquen las reglas de crecimiento y encogimiento. En este caso, se establece en un tamaño del 115% del tamaño del contenedor flexible.
+
+En resumen, la propiedad `flex: 0 0 115%;` asegura que el elemento tenga un tamaño inicial fijo (115% del tamaño del contenedor) y no se expanda ni se contraiga en relación con los demás elementos del contenedor.
+
+**flex-grow**
+
+Se utiliza en combinación con `flex` para especificar cómo se deben distribuir los espacios disponibles entre los elementos flexibles dentro de un contenedor flex.
+
+Cuando se aplica la propiedad `flex-grow` a un elemento flexible, se especifica la proporción de espacio adicional que el elemento puede ocupar en relación con los demás elementos flexibles dentro del mismo contenedor.
+
+El valor de `flex-grow` determina la cantidad de espacio disponible que se asignará a cada elemento flexible. Por ejemplo:
+
+- Si todos los elementos flexibles tienen un `flex-grow` establecido en 1, el espacio adicional disponible se distribuirá por igual entre ellos.
+
+- Si un elemento tiene un `flex-grow` de 2 y otro tiene un `flex-grow` de 1, el primer elemento ocupará el doble de espacio adicional que el segundo elemento.
+
+- Si un elemento tiene un `flex-grow` de 0, no se le asignará espacio adicional y mantendrá su tamaño original.
+
+**flex-shrink**
+
+Se utiliza en combinación con `flex` para controlar la capacidad de un elemento flexible para reducir su tamaño cuando el espacio disponible en el contenedor flex se reduce.
+
+Cuando se aplica la propiedad `flex-shrink` a un elemento flexible, se especifica la proporción en la que el elemento puede reducir su tamaño en relación con los demás elementos flexibles dentro del mismo contenedor cuando no hay suficiente espacio disponible.
+
+El valor de `flex-shrink` determina la cantidad de espacio que un elemento flexible está dispuesto a ceder cuando se reduce el espacio disponible. Por ejemplo:
+
+- Si todos los elementos flexibles tienen un `flex-shrink` establecido en 1, se reducirán en la misma proporción para ajustarse al espacio disponible.
+
+- Si un elemento tiene un `flex-shrink` de 2 y otro tiene un `flex-shrink` de 1, el primer elemento se reducirá en el doble de la proporción del segundo elemento.
+
+- Si un elemento tiene un `flex-shrink` de 0, no se reducirá y mantendrá su tamaño original incluso si el espacio disponible es insuficiente.
+
+**flex-basis**
+
+Se utiliza en combinación con `flex` para establecer el tamaño inicial de un elemento flexible en un contenedor flex.
+
+Cuando se aplica la propiedad `flex-basis` a un elemento flexible, se especifica el tamaño inicial deseado para ese elemento antes de que se distribuya el espacio disponible. Puede especificarse utilizando unidades de longitud como píxeles, porcentajes o valores relativos.
+
+El valor de `flex-basis` establece la dimensión principal del elemento flexible (ya sea ancho o altura, dependiendo de la dirección del flujo principal del contenedor flex) antes de que se realice la distribución del espacio sobrante.
+
+Algunos puntos importantes sobre la propiedad `flex-basis` son:
+
+- Si se establece en un valor específico, el elemento flexible ocupará ese tamaño inicial antes de distribuir el espacio restante.
+- Si se establece en `auto`, el elemento se dimensionará automáticamente según su contenido.
+- Si se establece en `0`, el elemento flexible comenzará con un tamaño inicial de cero antes de que se distribuya el espacio.
+- `flex-basis` se utiliza en combinación con las propiedades `flex-grow` y `flex-shrink` para determinar cómo se distribuye el espacio adicional o se reduce el espacio disponible entre los elementos flexibles.
+
+---
+
+> scroll-snap-type
+
+Se utiliza para controlar el comportamiento del desplazamiento (scroll) en un contenedor que tiene desplazamiento horizontal o vertical. En particular, la declaración `scroll-snap-type: x mandatory;` se aplica a un contenedor con desplazamiento horizontal y tiene dos partes:
+
+- `x`: Indica que se aplicará el comportamiento de desplazamiento horizontal (eje x). Si se desea el comportamiento vertical, se utilizaría `y`.
+
+La propiedad `scroll-snap-type` con el valor `mandatory` se utiliza en CSS para indicar que se requiere que el desplazamiento de un contenedor se adhiera a los puntos de anclaje definidos en los elementos secundarios. Los puntos de anclaje son posiciones específicas dentro de los elementos secundarios donde se desea que el desplazamiento se detenga.
+
+Cuando se establece `scroll-snap-type: mandatory`, significa que el desplazamiento se detendrá de manera precisa en las posiciones de anclaje definidas en los elementos secundarios. Esto evita que el desplazamiento quede "atascado" en posiciones intermedias y garantiza que el desplazamiento se alinee de forma suave y precisa con los puntos de anclaje.
+
+Algunos puntos clave sobre `scroll-snap-type: mandatory` son:
+
+- Requiere que los elementos secundarios tengan puntos de anclaje definidos utilizando propiedades como `scroll-snap-align`.
+- El desplazamiento se detendrá exactamente en estas posiciones de anclaje y no permitirá paradas intermedias.
+- Proporciona una experiencia de desplazamiento más precisa y suave, especialmente al utilizar desplazamiento horizontal o vertical en dispositivos táctiles o con desplazamiento mediante rueda de ratón.
+
 ## Colores usados en el proyecto
 
 ---
